@@ -2,7 +2,7 @@ import React from 'react';
 import Spline from '@splinetool/react-spline';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faNodeJs, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';  // Import the CSS file for animations
 
 const skills = [
