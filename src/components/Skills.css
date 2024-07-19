@@ -14,32 +14,19 @@
   position: absolute;
   font-size: 50px;
   color: #fff;
-  animation: float 10s infinite linear;
+  width: 50px; /* Set width */
+  height: 50px; /* Set height */
 }
 
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .skills-box {
+    height: 200px;
   }
-  25% {
-    transform: translate(100px, -50px);
-  }
-  50% {
-    transform: translate(200px, 50px);
-  }
-  75% {
-    transform: translate(-100px, 50px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
-/* Optional: add variations to the animation for different icons */
-.floating-icon:nth-child(odd) {
-  animation-duration: 12s;
-}
-
-.floating-icon:nth-child(even) {
-  animation-duration: 8s;
+  .floating-icon {
+    font-size: 30px;
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+  }
 }

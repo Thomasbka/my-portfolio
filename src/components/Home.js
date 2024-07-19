@@ -1,16 +1,8 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
 import { Container, Card, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import Skills from './Skills';  // Import the Skills component
 import './Home.css';  // Import the CSS file for animations
-
-const skills = [
-  { name: 'JavaScript', icon: faJs },
-  { name: 'React', icon: faReact },
-  { name: 'CSS', icon: faCss3Alt },
-  { name: 'HTML', icon: faHtml5 },
-];
 
 const Home = () => {
   return (
@@ -23,17 +15,8 @@ const Home = () => {
         <Spline scene="https://prod.spline.design/UlCAiLjoO4wFGTDj/scene.splinecode" />
       </div>
       <div className="content">
+        <Skills />
         <Container>
-          <Row className="my-4">
-            <Col>
-              <h2>Skills</h2>
-              <div className="skills-box">
-                {skills.map(skill => (
-                  <FontAwesomeIcon key={skill.name} icon={skill.icon} className="floating-icon" />
-                ))}
-              </div>
-            </Col>
-          </Row>
           <Row className="my-4">
             <Col md={4}>
               <Card>

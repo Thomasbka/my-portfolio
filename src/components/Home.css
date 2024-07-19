@@ -1,3 +1,27 @@
+#spline-container {
+  padding-top: 100px;
+  height: 60vh; /* Set a height relative to the viewport */
+  overflow: hidden;
+}
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  #spline-container {
+    padding-top: 50px; /* Adjust padding for smaller devices */
+  }
+
+  h3, h4 {
+    font-size: 1.2em; /* Adjust font size for smaller devices */
+  }
+
+  .skills-box {
+    height: 200px; /* Adjust height for smaller devices */
+  }
+
+  .floating-icon {
+    font-size: 30px; /* Adjust icon size for smaller devices */
+  }
+}
+
 .skills-box {
   position: relative;
   width: 100%;
@@ -16,7 +40,6 @@
   color: #fff;
   animation: float 10s infinite linear;
 }
-
 
 .floating-icon:nth-child(1) {
   top: 10%;
@@ -56,7 +79,6 @@
     transform: translate(0, 0);
   }
 }
-
 
 .floating-icon:nth-child(odd) {
   animation-duration: 12s;

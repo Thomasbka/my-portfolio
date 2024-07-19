@@ -16,10 +16,10 @@ const NavigationBar = () => {
         </Nav>
       </Navbar.Collapse>
       <div className="navbar-icons">
-        <Nav.Link href="https://www.linkedin.com" target="_blank">
+        <Nav.Link href="www.linkedin.com/in/thomas-andersen-062258106" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} size="lg" />
         </Nav.Link>
-        <Nav.Link href="https://www.github.com" target="_blank">
+        <Nav.Link href="https://github.com/Thomasbka" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="lg" />
         </Nav.Link>
       </div>
