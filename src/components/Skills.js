@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faCss3Alt, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons';
 import './Skills.css';
 
 const skills = [
@@ -9,6 +9,7 @@ const skills = [
   { name: 'React', icon: faReact },
   { name: 'CSS', icon: faCss3Alt },
   { name: 'HTML', icon: faHtml5 },
+  { name: 'Bootstrap', icon: faBootstrap},
 ];
 
 const Skills = () => {
@@ -26,23 +27,21 @@ const Skills = () => {
       icons.forEach(icon => {
         let x = Math.random() * (boxWidth - 50); 
         let y = Math.random() * (boxHeight - 50);
-        let dx = (Math.random() - 0.5) * 4; // Random horizontal speed
-        let dy = (Math.random() - 0.5) * 4; // Random vertical speed
+        let dx = (Math.random() - 0.5) * 4; 
+        let dy = (Math.random() - 0.5) * 4;
 
         const moveIcon = () => {
           x += dx;
           y += dy;
 
-          // Check horizontal boundaries
           if (x <= 0 || x >= boxWidth - 50) {
-            dx *= -1; // Reverse direction
-            x = Math.max(0, Math.min(x, boxWidth - 50)); // Ensure within bounds
+            dx *= -1; 
+            x = Math.max(0, Math.min(x, boxWidth - 50));
           }
 
-          // Check vertical boundaries
           if (y <= 0 || y >= boxHeight - 50) {
-            dy *= -1; // Reverse direction
-            y = Math.max(0, Math.min(y, boxHeight - 50)); // Ensure within bounds
+            dy *= -1; 
+            y = Math.max(0, Math.min(y, boxHeight - 50));
           }
 
           icon.style.transform = `translate(${x}px, ${y}px)`;
@@ -55,7 +54,6 @@ const Skills = () => {
 
     setInitialPositions();
 
-    // Add resize event listener
     window.addEventListener('resize', setInitialPositions);
 
     return () => {

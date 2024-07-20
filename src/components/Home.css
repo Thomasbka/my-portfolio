@@ -1,24 +1,44 @@
+.cv-preview {
+  margin-top: 20px;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv-preview p {
+  font-size: 1.2em;
+}
+
+.download-button {
+  box-shadow: -5px 5px 5px rgb(151, 143, 143);
+}
+
+.cv-intro {
+  font-size: 18px;
+}
+
 #spline-container {
   padding-top: 100px;
-  height: 60vh; /* Set a height relative to the viewport */
+  height: 60vh;
   overflow: hidden;
 }
-/* Add media queries for responsiveness */
 @media (max-width: 768px) {
   #spline-container {
-    padding-top: 50px; /* Adjust padding for smaller devices */
+    padding-top: 50px; 
   }
 
   h3, h4 {
-    font-size: 1.2em; /* Adjust font size for smaller devices */
+    font-size: 1.2em;
   }
 
   .skills-box {
-    height: 200px; /* Adjust height for smaller devices */
+    height: 200px;
   }
 
   .floating-icon {
-    font-size: 30px; /* Adjust icon size for smaller devices */
+    font-size: 30px;
   }
 }
 

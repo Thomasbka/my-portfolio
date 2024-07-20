@@ -1,8 +1,9 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-import { Container, Card, Row, Col } from 'react-bootstrap';
-import Skills from './Skills';  // Import the Skills component
-import './Home.css';  // Import the CSS file for animations
+import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import Skills from './Skills'; 
+import Projects from './Projects';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -18,31 +19,34 @@ const Home = () => {
         <Skills />
         <Container>
           <Row className="my-4">
-            <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Project 1</Card.Title>
-                  <Card.Text>Description of project 1.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Project 2</Card.Title>
-                  <Card.Text>Description of project 2.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Project 3</Card.Title>
-                  <Card.Text>Description of project 3.</Card.Text>
-                </Card.Body>
-              </Card>
+            <Col className="text-center">
+              <hr/>
+              <h2><u>CV</u></h2>
+              <p className="cv-intro">
+                Welcome to my professional portfolio.<br/> Below, you can find my detailed CV that outlines my skills, experience, and accomplishments. Feel free to browse through it to get a better understanding of my background and expertise. If you wish to keep a copy for your reference, you can download it using the button provided.
+              </p>
+              <Image 
+                src="/Thomas_Andersen_CV.png" 
+                alt="Thomas Andersen CV Preview" 
+                style={{ maxWidth: '60%', height: 'auto' }} 
+                className="cv-preview" 
+              />
             </Col>
           </Row>
+          <Row className="">
+            <Col className="text-center">
+              <Button 
+                variant="light" 
+                href="/Thomas_Andersen_CV.pdf" 
+                download
+                className="download-button"
+              >
+                Download CV
+              </Button>
+              <hr/>
+            </Col>
+          </Row>
+          <Projects/>
         </Container>
       </div>
     </div>
