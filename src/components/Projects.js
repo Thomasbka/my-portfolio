@@ -11,7 +11,7 @@ const Projects = () => {
     },
     {
       title: 'Dental Website Clone',
-      description: 'Using ReactJS I cloned a very standard dental website specializing in root canal treatments. The site features appointment scheduling, patient testimonials, and detailed service descriptions.',
+      description: 'Using ReactJS I cloned a very standard dental website specializing in root canal treatments. The site is in German and features appointment scheduling as well as detailed service descriptions.',
       image: '/Endoclin-clone.png',
       link: 'https://endoclin-clone.netlify.app',
     },
