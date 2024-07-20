@@ -35,6 +35,7 @@ const Projects = () => {
 
   return (
     <section>
+      <h3 className="text-center my-4 text-uppercase"><u>Projects</u></h3>
       <Row className="my-4">
         {projects.map((project, index) => (
           <Col md={4} key={index}>
