@@ -65,7 +65,7 @@ const Skills = () => {
     <Container>
       <Row className="my-4">
         <Col>
-          <h2>Skills</h2>
+          <h2 className="text-center"><u>Skills</u></h2>
           <div className="skills-box" ref={containerRef}>
             {skills.map(skill => (
               <FontAwesomeIcon key={skill.name} icon={skill.icon} className="floating-icon" />

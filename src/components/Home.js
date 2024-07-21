@@ -34,7 +34,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="">
-            <Col className="text-center">
+            <Col className="text-center pb-4">
               <Button 
                 variant="light" 
                 href="/Thomas_Andersen_CV.pdf" 
@@ -43,7 +43,6 @@ const Home = () => {
               >
                 Download CV
               </Button>
-              <hr/>
             </Col>
           </Row>
           <Projects/>

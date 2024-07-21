@@ -6,13 +6,15 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const NavigationBar = () => {
   return (
-    <Navbar className="navbar-dark" bg="black" expand="lg">
+    <Navbar id="navbar" className="navbar-dark pb-5" bg="black" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
           <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/certificates">Certificates</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <div className="navbar-icons">
