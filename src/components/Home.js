@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <div>
         <h3 className="text-center">Thomas Andersen</h3>
-        <h4 className="text-center">Web Developer</h4>
+        <h4 className="text-center">Frontend Web-Developer</h4>
       </div>
       <div id="spline-container">
         <Spline scene="https://prod.spline.design/UlCAiLjoO4wFGTDj/scene.splinecode" />
@@ -23,7 +23,7 @@ const Home = () => {
               <hr/>
               <h2><u>CV</u></h2>
               <p className="cv-intro">
-                Welcome to my professional portfolio.<br/> Below, you can find my detailed CV that outlines my skills, experience, and accomplishments. Feel free to browse through it to get a better understanding of my background and expertise. If you wish to keep a copy for your reference, you can download it using the button provided.
+                Welcome to my portfolio.<br/> Below, you can find my detailed CV that outlines my skills, experience, and accomplishments. Feel free to browse through it to get a better understanding of my background and expertise. If you wish to keep a copy for your reference, you can download it using the button provided.
               </p>
               <Image 
                 src="/Thomas_Andersen_CV.png" 
