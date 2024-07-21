@@ -37,7 +37,7 @@ const Home = () => {
             <Col className="text-center">
               <Button 
                 variant="light" 
-                href="/Thomas Andersen_CV.pdf" 
+                href="/Thomas_Andersen_CV.pdf" 
                 download
                 className="download-button"
               >
