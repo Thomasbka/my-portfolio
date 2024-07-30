@@ -28,6 +28,11 @@ const Certificates = () => {
       text: 'This is a certificate for the Fullstack Web-Developer course completed at Altcademy.',
       imgSrc: '/Ruby.png',
     },
+    {
+      title: 'Ruby on Rails - Certificate',
+      text: 'This is a certificate for the Fullstack Web-Developer course completed at Altcademy.',
+      imgSrc: '/Ruby_on_Rails.png',
+    },
   ];
 
   return (
