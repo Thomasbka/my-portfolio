@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faCss3Alt, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faCss3Alt, faHtml5, faBootstrap, faGem} from '@fortawesome/free-brands-svg-icons';
 import './Skills.css';
 
 const skills = [
@@ -9,7 +9,7 @@ const skills = [
   { name: 'React', icon: faReact },
   { name: 'CSS', icon: faCss3Alt },
   { name: 'HTML', icon: faHtml5 },
-  { name: 'Bootstrap', icon: faBootstrap},
+  { name: 'Bootstrap', icon: faBootstrap },
 ];
 
 const Skills = () => {

@@ -4,6 +4,12 @@ import { Row, Col, Card, Button } from 'react-bootstrap';
 const Projects = () => {
   const projects = [
     {
+      title: 'To Do List',
+      description: 'Fullstack Web-application that contains a to do list. This was created using Ruby on Rails.',
+      image: '/To_Do_List.png',
+      link: 'https://pure-plateau-84858-166fc0cd4586.herokuapp.com/',
+    },
+    {
       title: '10 Seconds Math Game',
       description: 'Created using pure JS, HTML and CSS. User needs to input the correct answer to a basic arithmetic equation. Such as 5 + 10. However, there is a time limit of 10 seconds for which the user can input the correct answer and progress to the next question.',
       image: '/10-sec-math-game.png',
