@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
+import './Projects.css'; // Assuming you add the above CSS into this file
 
 const Projects = () => {
   const projects = [
@@ -42,11 +43,11 @@ const Projects = () => {
   return (
     <section className="container border rounded">
       <h3 className="text-center my-4 text-uppercase"><u>Projects</u></h3>
-      <Row className="my-4">
+      <Row className="my-4 g-4"> {/* Use Bootstrap's g-4 class for spacing */}
         {projects.map((project, index) => (
-          <Col md={4} key={index}>
-            <Card className="mb-4">
-              <Card.Img variant="top" src={project.image} alt={project.title} />
+          <Col md={4} key={index} className="d-flex col-spacing">
+            <Card className="mb-4 flex-fill">
+              <Card.Img variant="top" src={project.image} alt={project.title} className="card-img-top" />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>
@@ -54,20 +55,22 @@ const Projects = () => {
                     ? project.description
                     : `${project.description.substring(0, maxLength)}...`}
                 </Card.Text>
-                <Button
-                  variant="link"
-                  onClick={() => toggleReadMore(index)}
-                >
-                  {expanded[index] ? 'Read Less' : 'Read More'}
-                </Button>
-                <Button
-                  variant="dark"
-                  href={project.link}
-                  target="_blank"
-                  className="mt-2"
-                >
-                  View Project
-                </Button>
+                <div>
+                  <Button
+                    variant="link"
+                    onClick={() => toggleReadMore(index)}
+                  >
+                    {expanded[index] ? 'Read Less' : 'Read More'}
+                  </Button>
+                  <Button
+                    variant="dark"
+                    href={project.link}
+                    target="_blank"
+                    className="mt-2"
+                  >
+                    View Project
+                  </Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>

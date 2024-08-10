@@ -1,0 +1,9 @@
+.card {
+  margin-bottom: 20px; /* Adds space between rows */
+}
+
+.col-spacing {
+  margin-bottom: 20px; /* Adds space between columns in smaller viewports */
+  padding-left: 10px;
+  padding-right: 10px;
+}
