@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
-import './Projects.css'; // Assuming you add the above CSS into this file
+import './Projects.css';
 
 const Projects = () => {
   const projects = [
