@@ -1,0 +1,5 @@
+.certificate-card img {
+  height: 200px; /* Set a fixed height for the thumbnails */
+  width: 100%;
+  object-fit: cover; /* Ensures the image scales to fit without stretching */
+}
