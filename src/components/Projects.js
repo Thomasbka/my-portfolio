@@ -5,6 +5,18 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Floating Game',
+      description: 'Working together with a colleague, using git and git hub for version control, we created a floating game using purely HTML, CSS and JS.',
+      image: '/Floating-Game.png',
+      link:'https://manobrawn.github.io/floating-game/',
+    },
+    {
+      title: 'Calculator',
+      description: 'Working together with a colleague, using git and github for version control, we created a fully functional calculator using purely HTML, CSS and JS.',
+      image: '/Calculator.png',
+      link: 'https://manobrawn.github.io/calculator/',
+    },
+    {
       title: 'To Do List',
       description: 'Fullstack Web-application that contains a to do list. This was created using Ruby on Rails.',
       image: '/To_Do_List.png',

@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Spline from '@splinetool/react-spline';
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image, Modal } from 'react-bootstrap';
 import Skills from './Skills'; 
 import Projects from './Projects';
 import './Home.css';
 
 const Home = () => {
+  const [showCVModal, setShowCVModal] = useState(false);
+
+  const handleShowCVModal = () => setShowCVModal(true);
+  const handleCloseCVModal = () => setShowCVModal(false);
+
   return (
-    <div>
+    <section>
       <div>
         <h3 className="text-center">Thomas Andersen</h3>
         <h4 className="text-center">Frontend Web-Developer</h4>
@@ -28,12 +33,13 @@ const Home = () => {
               <Image 
                 src="/Thomas_Andersen_CV.png" 
                 alt="Thomas Andersen CV Preview" 
-                style={{ maxWidth: '60%', height: 'auto' }} 
-                className="cv-preview" 
+                style={{ maxWidth: '60%', height: 'auto', cursor: 'pointer' }} 
+                className="cv-preview"
+                onClick={handleShowCVModal}
               />
             </Col>
           </Row>
-          <Row className="">
+          <Row>
             <Col className="text-center pb-4">
               <Button 
                 variant="light" 
@@ -45,10 +51,23 @@ const Home = () => {
               </Button>
             </Col>
           </Row>
-          <Projects/>
+          <Projects />
         </Container>
       </div>
-    </div>
+
+      <Modal show={showCVModal} onHide={handleCloseCVModal} size="lg" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Thomas Andersen CV</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Image 
+            src="/Thomas_Andersen_CV.png" 
+            alt="Full CV" 
+            fluid
+          />
+        </Modal.Body>
+      </Modal>
+    </section>
   );
 }
 
