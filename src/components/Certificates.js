@@ -9,6 +9,11 @@ const Certificates = () => {
 
   const certificates = [
     {
+      title: 'Full-stack Deployment - Certificate',
+      text: 'Having mastered the fundamentals of ReactJS and Ruby on Rails, I am now proficient in integrating these technologies into a monolithic application, utilizing Webpacker to seamlessly manage ReactJS within the Ruby on Rails framework.',
+      imgSrc: '/Full-stack_Deployment.png',
+    },
+    {
       title: 'Frontend Development - Certificate',
       text: 'After working 1 month as a Frontend Developer at Kreativstorm I have received this certificate of completion. In the time working here I completed multiple projects together with colleagues utilizing git for version control.',
       imgSrc: '/kreativstorm-certificate.png',
@@ -86,8 +91,6 @@ const Certificates = () => {
             </Col>
           ))}
         </Row>
-
-        {/* Modal for displaying full-size certificate */}
         <Modal show={showModal} onHide={handleCloseModal} centered>
           <Modal.Header closeButton>
             <Modal.Title>{selectedCertificate?.title}</Modal.Title>

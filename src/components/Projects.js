@@ -5,6 +5,12 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Airbnb-clone',
+      description: 'A full-stack web application inspired by Airbnb, built with Ruby on Rails, ReactJS, and PostgreSQL. Users can create, update, and delete properties with image uploads (handled via AWS S3), book properties, and view available bookings dynamically. The app features ActiveStorage for image management, Action Mailer for email integration, and a responsive ReactJS frontend styled with SCSS. Authentication is managed with sessions and cookies, ensuring secure user interactions. 🔴 Please note that this is a portfolio project and not intended for actual use!',
+      image: '/airbnb-clone.png',
+      link:'https://fswd-airbnb-clone-905d31d1f8ba.herokuapp.com/',
+    },
+    {
       title: 'Floating Game',
       description: 'Working together with a colleague, using git and git hub for version control, we created a floating game using purely HTML, CSS and JS.',
       image: '/Floating-Game.png',
@@ -55,7 +61,7 @@ const Projects = () => {
   return (
     <section className="container border rounded">
       <h3 className="text-center my-4 text-uppercase"><u>Projects</u></h3>
-      <Row className="my-4 g-4"> {/* Use Bootstrap's g-4 class for spacing */}
+      <Row className="my-4 g-4">
         {projects.map((project, index) => (
           <Col md={4} key={index} className="d-flex col-spacing">
             <Card className="mb-4 flex-fill">

@@ -15,7 +15,7 @@ const Home = () => {
     <section>
       <div>
         <h3 className="text-center">Thomas Andersen</h3>
-        <h4 className="text-center">Frontend Web-Developer</h4>
+        <h4 className="text-center">Web-Developer</h4>
       </div>
       <div id="spline-container">
         <Spline scene="https://prod.spline.design/UlCAiLjoO4wFGTDj/scene.splinecode" />
