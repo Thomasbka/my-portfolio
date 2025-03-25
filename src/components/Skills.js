@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faCss3Alt, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faCss3Alt, faHtml5, faBootstrap, faPython} from '@fortawesome/free-brands-svg-icons';
 import './Skills.css';
 
 const skills = [
+  { name: 'Python', icon: faPython},
   { name: 'JavaScript', icon: faJs },
   { name: 'React', icon: faReact },
   { name: 'CSS', icon: faCss3Alt },

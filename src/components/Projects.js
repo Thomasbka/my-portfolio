@@ -5,6 +5,12 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Financial Portfolio Manager',
+      description: "A financial portfolio manager that allows users to add, edit and track their stock investments. Users can fetch live prices, see profit/loss, and track dividends over time. The user also has access to a sentiment analysis tool that gives an overall analysis of the market sentiment of a stock as well as the stock's confidence level. This analysis is based on the live financial articles. It also includes a little section that explains the key reasons for this.",
+      image: '/financial-portfolio-manager.png',
+      link:'https://financial-portfolio-manager-842a648c8184.herokuapp.com/',
+    },
+    {
       title: 'Airbnb-clone',
       description: 'A full-stack web application inspired by Airbnb, built with Ruby on Rails, ReactJS, and PostgreSQL. Users can create, update, and delete properties with image uploads (handled via AWS S3), book properties, and view available bookings dynamically. The app features ActiveStorage for image management, Action Mailer for email integration, and a responsive ReactJS frontend styled with SCSS. Authentication is managed with sessions and cookies, ensuring secure user interactions. 🔴 Please note that this is a portfolio project and not intended for actual use!',
       image: '/airbnb-clone.png',
